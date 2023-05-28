@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>прогресс бар</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  
+  <div class="wrapper wrapper-p">
+    <div class="container">
+      <div class="explan">
+        <h2 class="explan__title">что такое прогресс бар?</h2>
+        <p class="explan__text">
+          <span>нужно ежедневно цифровизировать свои результаты для понимания прогресса</span>
+          <span>прогресс бар цифровизирует результаты в виде помидорок (<img class="tomato" src="assets/images/tomato-icon.png" alt="помидорка">) </span>
+          <span>1<img class="tomato" src="assets/images/tomato-icon.png" alt="помидорка"> = 30 мин.</span>
+        </p>
+      </div>
+      <main class="content">
+        <form class="content__form">
+          <input class="content__form-input" type="text" placeholder="введи дело" name="case">
+          <br>
+          <label class="content__form-label" for="count">кол-во помидорок: <span id="pom-count">2</span></label>
+          <input class="content__form-range" type="range" name="count" value="2" max="12">
+          <br>
+          <button class="content__form-btn">записать дело</button>
+        </form>
+        <div class="content__list">
+          <!-- список дел с помидорками -->
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
